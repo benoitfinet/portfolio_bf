@@ -1,7 +1,7 @@
-import './anotherpage.scss';
+import './portFolio.scss';
 import React from 'react';
 
-function Anotherpage() {
+function PortFolio() {
 
     return (
         <div>
@@ -10,4 +10,4 @@ function Anotherpage() {
     )
 }
 
-export default Anotherpage
+export default PortFolio

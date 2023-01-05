@@ -1,0 +1,24 @@
+@import './assets/sass/variables.scss';
+
+p {
+  color: $textColor;
+  margin: 0;
+  font-family: monospace;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
