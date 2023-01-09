@@ -15,13 +15,16 @@ function ContactMe() {
                     <h3>Quick Contact</h3>
                     <h4>Contact me today, and get reply ASAP!</h4>
                     <fieldset>
-                        <input placeholder="Your name" type="text" tabIndex="1" required autoFocus />
+                        <label for="name">Your Name</label>
+                        <input name="Name" id="name" type="text" tabIndex="1" required autoFocus />
                     </fieldset>
                     <fieldset>
-                        <input placeholder="Your email address" type="email" tabIndex="2" required />
+                        <label for="email">Your email address</label>
+                        <input name="Email" id="email" type="email" tabIndex="2" required />
                     </fieldset>
                     <fieldset>
-                        <textarea placeholder="Type your message Here...." tabIndex="3" required></textarea>
+                        <label for="message">Type your message here....</label>
+                        <textarea name="Message" id="message" tabIndex="3" required></textarea>
                     </fieldset>
                     <fieldset>
                         <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
