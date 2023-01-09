@@ -11,6 +11,9 @@ function Home() {
                     <p>React and JS developer</p>
                     <p>based in Créteil, France</p>
                 </div>
+                <div>
+                    <button>Download Resume</button>
+                </div>
             </div>
         </div>
     )

@@ -1,4 +1,5 @@
 @import '../../assets/sass/variables.scss';
+@import '../../assets/sass/mixins.scss';
 
 .presentation {
 
@@ -6,12 +7,18 @@
     height: calc(100vh - 80px);
     text-align: center;
     justify-content: center;
-    background-image: url('../../assets/images/test3.jpg');
-    background-size: cover;
-    padding: 0 10vw;
+    background-color: black;
+    width: 100vw;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 50vh;
+    }
 
     &__firstLine {
-        font-size: 64px;
+        font-size: 3.5vw;
         font-family: monospace;
         overflow: hidden;
         /* Ensures the content is not revealed until the animation */
@@ -19,13 +26,17 @@
         /* The typwriter cursor */
         white-space: nowrap;
         /* Keeps the content on a single line */
-        margin: 100px auto 20px 0;
+        margin: 150px auto 20px 0;
         /* Gives that scrolling effect as the typing happens */
         letter-spacing: .12em;
         /* Adjust as needed */
         animation:
             typing 2.5s steps(50, end),
             blink-caret 0.8s step-end infinite;
+
+        @include desktopmini-only {
+            font-size: 6vw;
+        }
     }
 
     &__firstName {
@@ -33,12 +44,16 @@
     }
 
     &__secondLine {
-        font-size: 34px;
+        font-size: 2vw;
         animation: flash 3.2s ease-in;
         font-family: monospace;
 
+        @include desktopmini-only {
+            font-size: 3vw;
+        }
+
         & p {
-            color: $subtextColor
+            color: $textColor
         }
     }
 }
