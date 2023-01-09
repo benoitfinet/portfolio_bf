@@ -13,7 +13,7 @@ function Header() {
                     <p className='navigation header__aboutMe'>About me</p>
                 </Link> */}
                 <Link to="/contactMe">
-                    <p className='navigation header__contact'>Contact me</p>
+                    <p className='navigation header__contact'>Contact</p>
                 </Link>
                 {/* <Link to="/experience">
                     <p className='navigation header__experience'>Experience</p>

@@ -1,0 +1,102 @@
+@import '../../assets/sass/variables.scss';
+@import '../../assets/sass/mixins.scss';
+
+@mixin media() {
+    @media (min-width: 1250px) {
+        @content;
+    }
+}
+
+.portfolio {
+    background-color: black;
+    min-height: calc(100vh - 80px);
+    padding: 10px 10vw;
+
+    @include media {
+        padding: 10px 20vw;
+    }
+}
+
+.siteTitle {
+    display: block;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 20px 0;
+
+    @include media {
+        font-size: 60px;
+    }
+}
+
+.card {
+    height: 400px;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    border: 4px solid orange;
+    margin-bottom: 20px;
+    background-size: cover;
+
+    @include media {
+        height: 500px;
+    }
+}
+
+.inner {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100%;
+    border: 1px solid orange;
+    position: relative;
+
+    @include media {
+        width: 40%;
+        height: 100%;
+    }
+}
+
+.links {
+    position: absolute;
+    display: flex;
+    top: 0;
+    margin: 1em;
+}
+
+.githubLogo {
+    height: 40px;
+    width: auto;
+    background-color: transparent;
+}
+
+.title {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    margin: 0 0 20px 0;
+    display: none;
+
+    @include media {
+        font-size: 30px;
+    }
+}
+
+.subtitle {
+    color: #b0215e;
+    text-align: center;
+    padding-top: 30%;
+
+    @include media {
+        padding-top: 0%;
+    }
+}

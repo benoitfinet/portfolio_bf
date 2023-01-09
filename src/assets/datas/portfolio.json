@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Ohmyfood",
+        "image": "https://user.oc-static.com/upload/2020/08/24/15982605908418_Maquettes%20Ohmyfood.jpg",
+        "description": "Ohmyfood is an OpenClassRooms project based on learning how to use sass, animations and responsive content",
+        "linkGithub": "https://github.com/benoitfinet/kasa_p11.git",
+        "linkWebsite": "https://benoitfinet.github.io/BenoitFinet_3_11032022/"
+    },
+    {
+        "title": "GameOn",
+        "image": "https://user.oc-static.com/upload/2021/12/15/16395717662959_HomePage.png",
+        "description": "GameOn is an OpenClassRooms project based on learning to build and configure a submit form using javascript",
+        "linkGithub": "https://github.com/benoitfinet/GameOn-website-FR/tree/master/starterOnly",
+        "linkWebsite": "https://game-on-website-fr-lilac.vercel.app/"
+    },
+    {
+        "title": "Titre 3",
+        "image": "https://images.unsplash.com/photo-1672862817339-51ef2610a5d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1209&q=80",
+        "description": "Ceci est une description",
+        "link": "https://github.com/benoitfinet/kasa_p11.git"
+    },
+    {
+        "title": "Titre 4",
+        "image": "https://images.unsplash.com/photo-1672862817339-51ef2610a5d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1209&q=80",
+        "description": "Ceci est une description",
+        "link": "https://github.com/benoitfinet/kasa_p11.git"
+    },
+    {
+        "title": "Titre 5",
+        "image": "https://images.unsplash.com/photo-1672862817339-51ef2610a5d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1209&q=80",
+        "description": "Ceci est une description",
+        "link": "https://github.com/benoitfinet/kasa_p11.git"
+    }
+]
