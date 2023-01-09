@@ -1,4 +1,5 @@
 import './home.scss';
+import Resume from '../../assets/resume/BfinetCV.pdf'
 
 function Home() {
 
@@ -12,7 +13,9 @@ function Home() {
                     <p>based in Créteil, France</p>
                 </div>
                 <div>
-                    <button>Download Resume</button>
+                    <form method="get" action={Resume} target="_blank">
+                        <button className='buttonDownload' type="submit">Download Resume</button>
+                    </form>
                 </div>
             </div>
         </div>
