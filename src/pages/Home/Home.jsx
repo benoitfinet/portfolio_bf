@@ -1,5 +1,5 @@
 import './home.scss';
-import Resume from '../../assets/resume/BFINETCV.pdf'
+import Resume from '../../assets/resume/BfinetCV.pdf'
 
 function Home() {
 
