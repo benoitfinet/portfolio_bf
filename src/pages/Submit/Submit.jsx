@@ -7,8 +7,8 @@ function Submit() {
 
     return (
         <div className='submit'>
-            <p>Thank you!</p>
-            <p>We'll be in touch soon.</p>
+            <p>Merci!</p>
+            <p>Je vous contacte au plus vite.</p>
         </div>
     )
 }

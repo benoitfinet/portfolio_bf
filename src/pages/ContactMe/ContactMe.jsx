@@ -12,19 +12,19 @@ function ContactMe() {
                     method="POST"
                     action={FORM_ENDPOINT}
                 >
-                    <h3>Quick Contact</h3>
-                    <h4>Contact me today, and get reply ASAP!</h4>
+                    <h3>Contactez-moi</h3>
+                    <h4>Je vous répondrai au plus vite !</h4>
                     <fieldset>
-                        <input placeholder="Your name" name="Name" id="name" type="text" tabIndex="1" required autoFocus />
+                        <input placeholder="Votre nom" name="Name" id="name" type="text" tabIndex="1" required autoFocus />
                     </fieldset>
                     <fieldset>
-                        <input placeholder="Your email address" name="Email" id="email" type="email" tabIndex="2" required />
+                        <input placeholder="Votre adresse e-mail" name="Email" id="email" type="email" tabIndex="2" required />
                     </fieldset>
                     <fieldset>
-                        <textarea placeholder="Type your message Here...." name="Message" id="message" tabIndex="3" required></textarea>
+                        <textarea placeholder="Écrivez votre message ici..." name="Message" id="message" tabIndex="3" required></textarea>
                     </fieldset>
                     <fieldset>
-                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Envoyer</button>
                     </fieldset>
                 </form>
 

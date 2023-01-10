@@ -12,11 +12,16 @@ function PortFolio() {
     return (
         <div className='portfolio'>
             <div className='cardList'>
-                {data && data.map(({ title, image, description, linkGithub, linkWebsite }) => (
+                {data && data.map(({ title, image, origin, description, linkGithub, linkWebsite }) => (
                     <div key={title} className="card" style={{
                         backgroundImage: `url(${image})`
                     }} rel="noreferrer">
                         <div className="inner">
+                            <div>
+                                <h2 className="title">{title}</h2>
+                                <p className='origin'>{origin}</p>
+                            </div>
+                            <p className="subtitle">{description}</p>
                             <div className='links'>
                                 <a href={linkGithub} target="_blank" rel="noreferrer">
                                     <img src={GithubLogo} alt="Github Logo" className='githubLogo'></img>
@@ -25,8 +30,6 @@ function PortFolio() {
                                     <img src={WebIcon} alt="Web Icon" className='githubLogo'></img>
                                 </a>
                             </div>
-                            <h2 className="title">{title}</h2>
-                            <p className="subtitle">{description}</p>
                         </div>
                     </div>
                 ))}
