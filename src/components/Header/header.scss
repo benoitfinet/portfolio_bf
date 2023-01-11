@@ -6,14 +6,13 @@
     align-items: center;
     height: 80px;
     padding: 0 10vw;
-    background-color: black;
+    background-color: $backColor;
 
     &__name {
         margin: 0;
         font-weight: 700;
         font-size: 34px;
-        color: #fff;
-        font-family: monospace;
+        color: $textColor;
     }
 
     &__page {
@@ -21,7 +20,6 @@
         font-weight: 700;
         font-size: 34px;
         color: $textColor;
-        font-family: monospace;
     }
 
     &__nav {

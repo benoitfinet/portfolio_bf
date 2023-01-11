@@ -8,7 +8,7 @@
 }
 
 .portfolio {
-    background-color: black;
+    background-color: $backColor;
     min-height: calc(100vh - 80px);
     padding: 10px 10vw;
 
@@ -80,7 +80,6 @@
     position: relative;
     margin: 0 0 20px 0;
     display: none;
-    font-family: monospace;
 
     @include media {
         font-size: 30px;
@@ -91,7 +90,6 @@
 .origin {
     color: black;
     display: none;
-    font-family: monospace;
 
     @include media {
         display: block;

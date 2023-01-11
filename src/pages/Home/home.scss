@@ -7,7 +7,7 @@
     height: calc(100vh - 80px);
     text-align: center;
     justify-content: center;
-    background-color: black;
+    background-color: $backColor;
     width: 100vw;
 
     &__text {
@@ -19,17 +19,10 @@
 
     &__firstLine {
         font-size: 3.5vw;
-        font-family: monospace;
         overflow: hidden;
-        /* Ensures the content is not revealed until the animation */
-        border-right: .04em solid white;
-        /* The typwriter cursor */
         white-space: nowrap;
-        /* Keeps the content on a single line */
-        margin: 150px auto 20px 0;
-        /* Gives that scrolling effect as the typing happens */
+        margin: 150px auto 20px auto;
         letter-spacing: .12em;
-        /* Adjust as needed */
         animation:
             typing 2.5s steps(50, end),
             blink-caret 0.8s step-end infinite;
@@ -37,16 +30,19 @@
         @include desktopmini-only {
             font-size: 6vw;
         }
+
+        @include mobile-only {
+            font-size: 4.5vw;
+        }
     }
 
     &__firstName {
-        color: orange;
+        color: $secColor;
     }
 
     &__secondLine {
         font-size: 2vw;
         animation: flash 3.2s ease-in;
-        font-family: monospace;
 
         @include desktopmini-only {
             font-size: 3vw;
@@ -59,15 +55,14 @@
 }
 
 .buttonDownload {
-    background-color: orange;
+    background-color: transparent;
     /* Green */
-    border: 2px solid white;
-    color: white;
+    border: 2px solid $textColor;
+    color: $textColor;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-family: monospace;
     font-size: 16px;
     margin: 4px 2px;
     transition-duration: 0.4s;
@@ -76,10 +71,9 @@
 }
 
 .buttonDownload:hover {
-    background-color: rgb(255, 183, 48);
+    background-color: $secColor;
 }
 
-/* The typing effect */
 @keyframes typing {
     from {
         width: 0
@@ -100,7 +94,6 @@
     }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
 
     from,

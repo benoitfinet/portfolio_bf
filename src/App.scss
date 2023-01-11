@@ -3,7 +3,6 @@
 p {
   color: $textColor;
   margin: 0;
-  font-family: monospace;
 }
 
 a:link {
@@ -21,4 +20,8 @@ a:link {
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: monospace;
 }
