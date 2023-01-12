@@ -9,7 +9,7 @@ function Home() {
     return (
         <div className='presentation'>
             <div className='presentation__text'>
-                <p className='presentation__firstLine'>Bienvenue ! Moi c'est <span className='presentation__firstName'>Benoît</span></p>
+                <p className='presentation__firstLine'>Bienvenue ! Je suis <span className='presentation__firstName'>Benoît</span></p>
                 <div className='presentation__secondLine'>
                     <p>Développeur front-end JS et React</p>
                     <p>Ce site est en cours de réalisation, n'hésitez pas à revenir régulièrement !</p>
