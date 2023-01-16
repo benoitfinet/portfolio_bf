@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Portfolio",
+        "image": "https://zupimages.net/up/23/03/sf4w.png",
+        "origin": "Projet personel",
+        "description": "Création d'un site personnel dans le cadre de ma recherche d'emploi. En cours de réalisation",
+        "linkGithub": "https://github.com/benoitfinet/portfolio_bf",
+        "linkWebsite": "https://benoitfinet.fr/",
+        "listTech": [
+            "React",
+            "Sass"
+        ],
+        "index": 1
+    },
+    {
+        "title": "Mini jeu de plateforme",
+        "image": "https://zupimages.net/up/23/03/7dy2.png",
+        "origin": "Projet personel",
+        "description": "Création d'un jeu de plateforme, utilisation d'assets 2D et sons, mise en place d'animations, création d'interface interactive, menu avec options. Grand merci à ZEF de TUTO UNITY FR !",
+        "linkGithub": "https://github.com/benoitfinet/platformer/tree/master",
+        "linkWebsite": "https://simmer.io/@BFinet/platformerbf",
+        "listTech": [
+            "Unity",
+            "C#",
+            "Assets 2D et sons"
+        ],
+        "index": 2
+    }
+]

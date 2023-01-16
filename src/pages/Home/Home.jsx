@@ -1,7 +1,8 @@
 import './home.scss';
-import Resume from '../../assets/resume/BfinetCV.pdf';
 import GithubLogo from '../../assets/images/GithubLogo.png';
-import linkedInLogo from '../../assets/images/In.png'
+import linkedInLogo from '../../assets/images/In.png';
+import Button from '../../components/Button/Button';
+import { Link } from 'react-router-dom';
 
 function Home() {
 
@@ -13,15 +14,15 @@ function Home() {
                 <div className='presentation__secondLine'>
                     <p>Développeur front-end JS et React</p>
                     <p>Ce site est en cours de réalisation, n'hésitez pas à revenir régulièrement !</p>
+                    <p>Dernière MAJ : 16/01/2023</p>
                 </div>
                 <div>
-                    <form method="get" action={Resume} target="_blank">
-                        <button className='buttonDownload' type="submit">Téléchargez mon CV</button>
-                    </form>
+                    <Link to='portFolio'>
+                        <Button type="undefined" text="Portfolio"></Button>
+                    </Link>
                 </div>
             </div>
             <footer className='presentation__footer'>
-
                 <a href="https://github.com/benoitfinet" target="_blank" rel="noreferrer">
                     <img className='presentation__footer--logo' src={GithubLogo} alt="Logo Github"></img>
                 </a>

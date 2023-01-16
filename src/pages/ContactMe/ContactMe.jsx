@@ -1,4 +1,5 @@
 import './contactMe.scss';
+import Button from '../../components/Button/Button';
 
 const FORM_ENDPOINT = "https://public.herotofu.com/v1/a29a70e0-8cf5-11ed-a003-6f0b76086b1c";
 
@@ -24,11 +25,9 @@ function ContactMe() {
                         <textarea placeholder="Écrivez votre message ici..." name="Message" id="message" tabIndex="3" required></textarea>
                     </fieldset>
                     <fieldset>
-                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Envoyer</button>
+                        <Button name="submit" type="submit" id="contact-submit" text="Envoyer" data-submit="...Sending"></Button>
                     </fieldset>
                 </form>
-
-
             </div>
         </div>
     );

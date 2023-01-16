@@ -1,5 +1,7 @@
 import './header.scss'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import Resume from '../../assets/resume/BfinetCV.pdf';
+import Button from '../Button/Button';
 
 function Header() {
 
@@ -18,6 +20,9 @@ function Header() {
                 <Link to="/portFolio">
                     <p className='navigation header__portFolio'>Portfolio</p>
                 </Link>
+                <form method="get" action={Resume} target="_blank">
+                    <Button type="submit" text="Mon CV"></Button>
+                </form>
             </div>
         </div>
     )

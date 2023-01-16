@@ -1,38 +1,33 @@
-import './portFolio.scss';
-import React from 'react';
-import Datas from '../../assets/datas/portfolio.json';
-import GithubLogo from '../../assets/images/GithubLogo.png';
-import WebIcon from '../../assets/images/web.png';
+import './portfolio.scss';
+import React, { useState } from 'react';
+import CardsVitrine from '../../components/CardsVitrine/CardsVitrine';
+import CardsArchive from '../../components/CardsArchive/CardsArchive';
 
 
 function PortFolio() {
 
-    const data = Datas
+    const [vitrine, setVitrine] = useState(true)
 
     return (
         <div className='portfolio'>
-            <div className='cardList'>
-                {data && data.map(({ title, image, origin, description, linkGithub, linkWebsite }) => (
-                    <div key={title} className="card" style={{
-                        backgroundImage: `url(${image})`
-                    }} rel="noreferrer">
-                        <div className="inner">
-                            <div>
-                                <h2 className="title">{title}</h2>
-                                <p className='origin'>{origin}</p>
-                            </div>
-                            <p className="subtitle">{description}</p>
-                            <div className='links'>
-                                <a href={linkGithub} target="_blank" rel="noreferrer">
-                                    <img src={GithubLogo} alt="Github Logo" className='githubLogo'></img>
-                                </a>
-                                <a href={linkWebsite} target="_blank" rel="noreferrer">
-                                    <img src={WebIcon} alt="Web Icon" className='githubLogo'></img>
-                                </a>
-                            </div>
-                        </div>
+            <div className='portfolio__content'>
+                <div className='portfolio__select'>
+                    <div className={`portfolio__select--choice portfolio__select--choice1 + ${vitrine ? "portfolio__select--active" : null}`}
+                        onClick={() => vitrine ? null : setVitrine(true)}
+                    >
+                        <p>Derniers projets</p>
                     </div>
-                ))}
+                    <div className={`portfolio__select--choice portfolio__select--choice2 + ${!vitrine ? "portfolio__select--active" : null}`}
+                        onClick={() => vitrine ? setVitrine(false) : null}
+                    >
+                        <p>Archives</p>
+                    </div>
+                </div>
+                {vitrine ?
+                    <CardsVitrine />
+                    :
+                    <CardsArchive />
+                }
             </div>
         </div>
     )

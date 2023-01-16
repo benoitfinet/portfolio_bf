@@ -54,7 +54,8 @@
             padding-top: 10px;
         }
 
-        & p:last-child {
+        & p:nth-child(2),
+        p:nth-child(3) {
             font-size: 1vw;
 
             @include desktopmini-only {
@@ -76,25 +77,6 @@
         }
 
     }
-}
-
-.buttonDownload {
-    background-color: transparent;
-    border: 2px solid $textColor;
-    color: $textColor;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.buttonDownload:hover {
-    background-color: $secColor;
 }
 
 @keyframes typing {
