@@ -1,4 +1,4 @@
-import './cardsArchive.scss';
+import './cards.scss';
 import React from 'react';
 import DatasArchive from '../../assets/datas/portfolioArchive.json';
 import GithubLogo from '../../assets/images/GithubLogo.png';

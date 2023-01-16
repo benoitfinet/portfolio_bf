@@ -17,6 +17,10 @@
             width: 50%;
             padding: 20px;
 
+            @include tablette-only {
+                display: none;
+            }
+
             & img {
                 display: flex;
                 align-items: center;
@@ -26,16 +30,6 @@
                 height: 100%;
                 border-radius: 5px;
                 object-fit: cover;
-            }
-
-            & img:hover {
-                filter: none;
-                transition: $transition;
-            }
-
-
-            @include tablette-only {
-                width: 100%;
             }
         }
 
@@ -48,7 +42,8 @@
             padding: 20px;
 
             @include tablette-only {
-                display: none;
+                width: 100%;
+                text-align: center;
             }
         }
 
@@ -61,7 +56,8 @@
             padding: 20px;
 
             @include tablette-only {
-                display: none;
+                width: 100%;
+                text-align: center;
             }
         }
 
@@ -92,6 +88,10 @@
             flex-direction: row;
             justify-content: flex-end;
 
+            @include tablette-only {
+                justify-content: center;
+            }
+
             & p {
                 padding-left: 18px;
                 font-weight: 400;
@@ -104,6 +104,10 @@
             flex-direction: row;
             justify-content: flex-start;
 
+            @include tablette-only {
+                justify-content: center;
+            }
+
             & p {
                 padding-right: 18px;
                 font-weight: 400;
@@ -114,7 +118,11 @@
         &__links {
 
             & a {
-                padding-left: 2em;
+                margin-left: 2em;
+
+                @include tablette-only {
+                    margin: 2em;
+                }
             }
 
             & a img {
@@ -124,8 +132,13 @@
         }
 
         &__linksInvert {
+
             & a {
-                padding-right: 2em;
+                margin-right: 2em;
+
+                @include tablette-only {
+                    margin: 2em;
+                }
             }
 
             & a img {

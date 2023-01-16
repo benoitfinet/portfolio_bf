@@ -1,4 +1,4 @@
-import './cardsVitrine.scss';
+import './cards.scss';
 import React from 'react';
 import DatasVitrine from '../../assets/datas/portfolioVitrine.json';
 import GithubLogo from '../../assets/images/GithubLogo.png';

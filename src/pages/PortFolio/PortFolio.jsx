@@ -1,7 +1,7 @@
 import './portFolio.scss';
 import React, { useState } from 'react';
-import CardsVitrine from '../../components/CardsVitrine/CardsVitrine';
-import CardsArchive from '../../components/CardsArchive/CardsArchive';
+import CardsVitrine from '../../components/Cards/CardsVitrine';
+import CardsArchive from '../../components/Cards/CardsArchive';
 
 
 function PortFolio() {
