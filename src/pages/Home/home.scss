@@ -4,11 +4,10 @@
 .presentation {
 
     display: flex;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 120px);
     text-align: center;
     justify-content: center;
     background-color: $backColor;
-    width: 100vw;
 
     &__text {
         display: flex;
@@ -22,6 +21,7 @@
         overflow: hidden;
         white-space: nowrap;
         margin: 150px auto 20px auto;
+        pointer-events: none;
         border-right: .04em solid white;
         letter-spacing: .12em;
         animation:

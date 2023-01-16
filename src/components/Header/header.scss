@@ -5,8 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
     padding: 0 10vw;
+    height: 120px;
     background-color: $backColor;
 
     @include mobile-only {
@@ -34,8 +34,8 @@
         align-items: center;
 
         @include mobile-only {
-            justify-content: space-around;
-            margin: 1em 0;
+            justify-content: space-between;
+            margin: 1em 0 0 0;
         }
     }
 }
