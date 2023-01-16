@@ -23,11 +23,11 @@
             justify-content: center;
             align-items: center;
             font-weight: 600;
-            font-size: 20px;
+            font-size: 2vw;
             cursor: pointer;
 
-            @include tablette-only {
-                font-size: 16px;
+            @include mobile-only {
+                font-size: 3vw;
             }
         }
 
