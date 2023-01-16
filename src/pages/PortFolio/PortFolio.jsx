@@ -1,4 +1,4 @@
-import './portfolio.scss';
+import './portFolio.scss';
 import React, { useState } from 'react';
 import CardsVitrine from '../../components/CardsVitrine/CardsVitrine';
 import CardsArchive from '../../components/CardsArchive/CardsArchive';
