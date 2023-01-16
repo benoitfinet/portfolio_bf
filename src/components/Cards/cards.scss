@@ -93,9 +93,13 @@
             }
 
             & p {
-                padding-left: 18px;
+                margin-left: 2em;
                 font-weight: 400;
                 font-size: 14px;
+
+                @include tablette-only {
+                    margin: 0 0.5em;
+                }
             }
         }
 
@@ -109,9 +113,13 @@
             }
 
             & p {
-                padding-right: 18px;
+                margin-right: 2em;
                 font-weight: 400;
                 font-size: 14px;
+
+                @include tablette-only {
+                    margin: 0 0.5em;
+                }
             }
         }
 
@@ -121,7 +129,7 @@
                 margin-left: 2em;
 
                 @include tablette-only {
-                    margin: 2em;
+                    margin: 1em;
                 }
             }
 
@@ -137,7 +145,7 @@
                 margin-right: 2em;
 
                 @include tablette-only {
-                    margin: 2em;
+                    margin: 1em;
                 }
             }
 
