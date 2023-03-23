@@ -20,7 +20,7 @@ function Header() {
                 <Link to="/portFolio">
                     <p className='navigation header__portFolio'>Portfolio</p>
                 </Link>
-                <form method="get" action={Resume} target="_blank" className='navigation header__button'>
+                <form method="get" action={Resume} target="_blank" className='header__button'>
                     <Button type="submit" text="Mon CV"></Button>
                 </form>
             </div>

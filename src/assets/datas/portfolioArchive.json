@@ -4,10 +4,10 @@
         "image": "https://user.oc-static.com/upload/2020/08/24/15982605908418_Maquettes%20Ohmyfood.jpg",
         "origin": "OpenClassRooms",
         "description": "Création d'un site responsive, ajout d'animations avec Sass, respect des maquettes et d'une charte graphique.",
-        "linkGithub": "https://github.com/benoitfinet/kasa_p11.git",
+        "linkGithub": "https://github.com/benoitfinet/BenoitFinet_3_11032022.git",
         "linkWebsite": "https://benoitfinet.github.io/BenoitFinet_3_11032022/",
         "listTech": [
-            "React",
+            "Javascript",
             "Sass",
             "FontAwesome"
         ],

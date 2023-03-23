@@ -31,9 +31,9 @@ function CardsArchive() {
                                     <a href={linkGithub} target="_blank" rel="noreferrer">
                                         <img src={GithubLogo} alt='Github logo' />
                                     </a>
-                                    <a href={linkWebsite} target="_blank" rel="noreferrer">
+                                    {linkWebsite ? <a href={linkWebsite} target="_blank" rel="noreferrer">
                                         <img src={WebLogo} alt='External Link' />
-                                    </a>
+                                    </a> : null}
                                 </div>
                             </div>
                         </div>

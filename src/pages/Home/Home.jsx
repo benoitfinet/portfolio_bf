@@ -13,8 +13,7 @@ function Home() {
                 <p className='presentation__firstLine'>Bienvenue ! Je suis <span className='presentation__firstName'>Benoît</span></p>
                 <div className='presentation__secondLine'>
                     <p>Développeur front-end JS et React</p>
-                    <p>Ce site est en cours de réalisation, n'hésitez pas à revenir régulièrement !</p>
-                    <p>Dernière MAJ : 16/01/2023</p>
+                    <p>Ce site est en cours de développement, n'hésitez pas à revenir régulièrement !</p>
                 </div>
                 <div>
                     <Link to='portFolio'>
